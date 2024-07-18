@@ -41,8 +41,8 @@ export const CheckOut = asyncErrrorHandler(async (req, res, next) => {
         };
       }),
       mode: "payment",
-      success_url: `${process.env.FRONTEND_HOST}/user/order/success`,
-      cancel_url: `${process.env.FRONTEND_HOST}/user/home`,
+      success_url: `${process.env.FRONTEND_HOST}user/order/success`,
+      cancel_url: `${process.env.FRONTEND_HOST}user/home`,
     });
 
     console.log("Session:", session);
